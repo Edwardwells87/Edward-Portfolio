@@ -3,9 +3,19 @@
   --font-color: rgb(195,206,237);
   --scroll-over: rgb(99,238,210);
   --big-words: rgb(204,214,246);
-
+  --big-words-size: 48px;
+  --big-words-weight: bold;
+  --big-words-transform: capitalize;
 }
+
 body{
   background-color: var(--dark-background);
   color: var(--font-color);
+}
+
+.big-name {
+  color: var(--big-words);
+  font-size: var(--big-words-size);
+  font-weight: var(--big-words-weight);
+  text-transform: var(--big-words-transform);
 }
