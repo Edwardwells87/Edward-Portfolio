@@ -1,4 +1,11 @@
-:root {
-  --background-color: rgb(10,25,47),
-  --
+:root{
+  --dark-background: rgb(10,25,47);
+  --font-color: rgb(195,206,237);
+  --scroll-over: rgb(99,238,210);
+  --big-words: rgb(204,214,246);
+
+}
+body{
+  background-color: var(--dark-background);
+  color: var(--font-color);
 }
