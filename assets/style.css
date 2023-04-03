@@ -1,19 +1,139 @@
-:root{
-  --dark-background: rgb(10,25,47);
-  --font-color: rgb(195,206,237);
-  --scroll-over: rgb(99,238,210);
-  --big-words: rgb(204,214,246);
+:root {
+  --dark-background: rgb(10, 25, 47);
+  --font-color: rgb(195, 206, 237);
+  --scroll-over: rgb(99, 238, 210);
+  --big-words: rgb(204, 214, 246);
   --big-words-size: 48px;
   --big-words-weight: bold;
   --big-words-transform: capitalize;
 }
 
-body{
-  background-color: var(--dark-background);
-  color: var(--font-color);
+/* the justify-content property 
+  determines spacing along the main axis; it's paired with 
+  the main axis. If you change the flex-direction, you
+   are changing the direction of the main axis. The
+   align-items property determines spacing along the cross axis;
+   it's paired with the cross axis 
+*/
+main {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
+.header {
+  border: solid 2px yellow;
+  display: flex;
+  padding: 10px 20px;
+  flex-wrap: wrap; 
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: flex-end; 
+}
+
+.header nav,
+.header div {
+  border: solid 2px pink;
+  margin: 0.5rem;
+  font-size: larger;
+}
+
+
+.header a {
+  border: solid 2px aqua;
+  text-decoration: none;
+  color: var(--font-color);
+  margin-right: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.content,
+.greeting {
+  padding: 10px 20px;
+ 
+}
+
+.greeting {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: var(--big-words-size);
+  font-size: var(--big-words-size);
+  padding-top: 10rem;
+}
+.content {
+  border: solid 2px green;
+}
+
+.content section {
+  border: solid 2px white;
+  margin: 1rem 0;
+}
+
+body {
+  background-color: var(--dark-background);
+  color: var(--font-color);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+ul {
+  list-style-type: none;
+}
+
+.brief-description {
+  display: flex;
+  flex-direction: column;
+  align-items: ;
+  text-align: center;
+}
+
+.greeting {
+ 
+}
+
+#background{
+font-size: 33px;
+padding-top: 20rem;
+padding-bottom: 2rem;
+}
+.background-info {
+  padding-bottom: 20rem;
+  
+}
+#projects {
+  display: flex;
+  padding: 10rem;
+  text-align: center;
+  flex-direction: column;
+  
+}
+
+.projects-title {
+font-size: var(--big-words-size);
+color: var(--big-words);
+border:2px;
+border-color: aquamarine;
+
+}
+
+.project-list {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  flex-direction: row;
+  margin: 15rem;
+
+}
+
+.project-list li {
+  margin: 5rem;
+  
+}
+
+
 .big-name {
+  margin: auto 0;
+  border: solid 2px red;
+  display: inline-block;
   color: var(--big-words);
   font-size: var(--big-words-size);
   font-weight: var(--big-words-weight);
