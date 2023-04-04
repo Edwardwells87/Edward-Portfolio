@@ -68,6 +68,9 @@ main {
   border: solid 2px white;
   margin: 1rem 0;
 }
+#my-pic {
+  border-radius: 14rem;
+}
 
 body {
   background-color: var(--dark-background);
@@ -91,7 +94,7 @@ ul {
 
 #background{
 font-size: 33px;
-padding-top: 20rem;
+padding-top: 10rem;
 padding-bottom: 2rem;
 }
 .background-info {
@@ -126,7 +129,7 @@ border-color: aquamarine;
 
 .project-list li {
   margin: 5rem;
-  
+
 }
 
 
