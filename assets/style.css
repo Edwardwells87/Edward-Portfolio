@@ -24,6 +24,24 @@ main {
 
 }
 
+@media only screen and (max-width: 768px) {
+  :root {
+    --big-words-size: 36px;
+  }
+  main {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  :root {
+    --big-words-size: 24px;
+  }
+  main {
+    font-size: 14px;
+  }
+}
+
 .header {
   /* border: solid 2px yellow; */
   display: flex;
